@@ -1,0 +1,34 @@
+
+.hello {
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.name {
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-size: 72px;
+letter-spacing: -3px;
+color: #ffffff;
+}
+
+.tagline {
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 2px;
+color: #ffffff;
+}
+
+.icons {
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #ffffff;
+}
