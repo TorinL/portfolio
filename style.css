@@ -1,34 +1,193 @@
+/* Background */
+
+.background-img {
+    background-image: url("http://www.torinlongaker.com/images/tinified/splash-bg.jpg");
+    background-size: cover;
+    height: auto;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  animation-delay: .9s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+
+/* Info Section */
+
+.info-section {
+    margin-left: 40px;
+}
 
 .hello {
-font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-size: 18px;
-letter-spacing: 5px;
-text-transform: uppercase;
-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .name {
-font-family: 'Poppins', sans-serif;
-font-weight: 700;
-font-size: 72px;
-letter-spacing: -3px;
-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: -3px;
+    color: #ffffff;
 }
 
 .tagline {
-font-family: 'Poppins', sans-serif;
-font-weight: 400;
-font-size: 20px;
-letter-spacing: 2px;
-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
+
+/* Icons */
+
 .icons {
-font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-size: 14px;
-letter-spacing: 5px;
-text-transform: uppercase;
-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 8%;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.indiv-icon {
+    display: inline block;
+    text-align: center;
+    padding-right: 20px;
+    clear: both;
+}
+
+.indiv-icon a:link, a:visited, a:active {
+    color: #ffffff;
+}
+
+.indiv-icon a:hover {
+    text-decoration: none;
+    color: #3e72c1;
+}
+
+
+/* Mobile */
+
+@media (min-width: 320px) {
+    .profile {
+        display: none;
+    }
+    .info-section {
+        padding-top: 100px;
+        margin-left: 20px;
+        height: 600px;
+    }
+    .name {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    .icons {
+        display: flex;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .profile {
+        display: none;
+    }
+    .info-section {
+        padding-top: 100px;
+    }
+    .name {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        letter-spacing: -3px;
+        color: #ffffff;
+    }
+    .icons {
+        display: flex;
+    }
+}
+
+
+/* Large Desktop */
+
+@media (min-width: 992px) {
+    .profile {
+        padding-top: 100px;
+        display: flex;
+    }
+    .info-section {
+        margin-left: 40px;
+        padding-top: 180px;
+    }
+    .name {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        letter-spacing: -3px;
+        color: #ffffff;
+    }
+}
+
+
+/* Extra Large Desktop */
+
+@media (min-width: 1200px) {
+    .profile {
+        padding-top: 100px;
+        margin-right: 50px;
+        display: flex;
+    }
+    .info-section {
+        margin-left: 60px;
+        padding-top: 250px;
+    }
 }
